@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  align-items: center !important;
+  justify-items: center;
+  .nav-link {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 20px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.1em;
+    font-size: 22px;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    margin: 10px 10px 0 20px;
+    cursor: pointer;
+    &:hover {
+      animation: spin 2s linear infinite;
+    }
+  }
+    .router-link-active.router-link-exact-active {
+      background-color: $contrast-color !important;
+      color: white;
+  }
+  .gelatine {
+    animation: gelatine 0.5s infinite;
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 384px;
+    top: -2px;
+    font-weight: 600;
+    color: $light-main-color;
+    p {
+      z-index: 3;
+      color: black !important;
+      font-size: 12px;
+      position: absolute;
+      top: 24px;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gelatine {
+  from, to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+

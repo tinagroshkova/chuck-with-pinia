@@ -1,0 +1,21 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import 'bootstrap-vue/node_modules/bootstrap/scss/bootstrap';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #666666 !important;
+  font-family: 'Staatliches', cursive;
+}
+
+@import "./components/components";
+@import "./layout/layout";
+@import "./pages/pages";

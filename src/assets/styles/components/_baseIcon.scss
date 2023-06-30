@@ -1,0 +1,18 @@
+.heart-icon {
+  font-size: 48px;
+  display: flex;
+  width: 100px;
+  align-self: flex-end;
+  padding: 20px;
+  filter: drop-shadow(1px 1px 1px black);
+}
+
+.added {
+  color: $contrast-color;
+}
+.toAdd {
+  color: grey;
+}
+
+
+

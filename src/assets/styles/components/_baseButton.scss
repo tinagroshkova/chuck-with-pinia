@@ -1,0 +1,23 @@
+.btn {
+  font-family: inherit;
+  background-color: $contrast-color;
+  border: 1px solid $contrast-color;
+  color: $light-main-color;
+  cursor: pointer;
+  border-radius: 20px !important;
+  font-size: 18px !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.2em;
+  box-shadow: $strong-box-shadow;
+  height: 52px;
+  &:hover,
+  &:active,
+  &:focus,
+  &:focus-visible {
+    background-color: $contrast-color !important;
+    border: 1px solid $contrast-color !important;
+    color: white !important;
+    outline: none;
+    box-shadow: $strong-box-shadow;
+  }
+}
